@@ -1,7 +1,7 @@
-name: mfa_template
+name: mfa_profile
 description: A new Flutter package project.
 version: 0.0.1
-homepage: mfa_template
+homepage: mfa_profile
 publish_to: none
 
 environment:
@@ -11,16 +11,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  image_picker: ^0.8.7+4
+  image_cropper: ^3.0.3
+
   # Comment on these remote repositories' dependencies if you want to work with local ones
-  common_dependencies:
-    git:
-      url: "https://github.com/muhna-mobile-app/common_dependencies"
-  common_utils:
-    git:
-      url: "https://github.com/muhna-mobile-app/common_utils"
+  # common_dependencies:
+  #   git:
+  #     url: "https://github.com/muhna-mobile-app/common_dependencies"
+  # common_utils:
+  #   git:
+  #     url: "https://github.com/muhna-mobile-app/common_utils"
   # Add dependencies from local repository
-  # core_app:
-  #   path: "../core_app"
+  core_app:
+    path: "../core_app"
+  common_dependencies:
+    path: "../common_dependencies"
+  common_utils:
+    path: "../common_utils"
 
   # Add dependency from remote repository
   # core_app:
